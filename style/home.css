@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --color-primary: #5e56ca;
+  --color-secodary: #312b80;
+  --color-terc: #ff9c03;
+
+  --container-max: 1100px;
+  --gap: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lekton", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #afafaf;
+  color: white;
+  overflow-x: hidden;
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide:nth-child(1) {
+  background-image: url("../img/slide/01.jpg");
+}
+
+.slide:nth-child(2) {
+  background-image: url("../img/slide/02.jpg");
+}
+
+.slide:nth-child(3) {
+  background-image: url("../img/slide/03.jpg");
+}
+
+.slide:nth-child(4) {
+  background-image: url("../img/slide/04.jpg");
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  color: white;
+  padding: 30px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo > img {
+  /* font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 2px; */
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: var(--color-terc);
+}
+
+.promo-section {
+  text-align: center;
+  margin-top: -80px;
+}
+
+.main-text {
+  font-size: 3.5rem;
+  font-weight: 600;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.4;
+  min-height: 90px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.nav-button {
+  background: none;
+  border: 2px solid white;
+  color: white;
+  padding: 12px 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s;
+  letter-spacing: 1px;
+}
+
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.slide-counter {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}

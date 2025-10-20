@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="shortcut icon" href="img/ajr.svg" type="image/x-icon">
+  <title>Almeida Júnior</title>
+</head>
+
+<body>
+  <section class="slideshow-container">
+    <!-- Slides -->
+    <div class="slide active"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+
+    <!-- Overlay escuro para melhor legibilidade do texto -->
+    <div class="overlay"></div>
+
+    <!-- Conteúdo -->
+    <div class="content">
+      <div class="header">
+        <div class="logo"><img src="img/ajr.png" alt=""></div>
+        <div class="nav-menu">
+          <a href="#">HOME</a>
+          <a href="#">A ALMEIDA JR</a>
+          <a href="#">PORTFÓLIO</a>
+          <a href="#">SERVIÇOS</a>
+          <a href="#">CONTATO</a>
+        </div>
+      </div>
+
+      <div class="promo-section">
+        <div class="main-text" id="slideDescription">ATUAMOS NOS MAIS DIVERSIFICADOS RAMOS DE INDUSTRIA</div>
+      </div>
+
+      <div class="navigation">
+        <button class="nav-button" id="prevBtn">&lt; anterior</button>
+        <div class="slide-counter" id="slideCounter">04 | 04</div>
+        <button class="nav-button" id="nextBtn">próximo &gt;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-span">
+        <span class="back-title">SOBRE A ALMEIDA JÚNIOR</span>
+        <span class="front-title"><span class="front-sobre">SOBRE A</span> ALMEIDA JÚNIOR</span>
+      </div>
+      <div class="about-grid">
+        <figure class="about-media">
+          <img src="img/body/01.jpg" alt="Guindaste e estrutura metálica">
+        </figure>
+
+        <div class="about-text">
+          <p>
+            A Almeida Júnior conta com uma vasta experiência de 24 anos na área em que atua, adquirida
+            em empresas conceituadas e de grande porte em diversificados segmentos de indústrias.
+          </p>
+          <p>
+            Além do conhecimento inerente de seus colaboradores, a empresa mantém um banco de dados de
+            projetos, desenhos, controle e planejamento de materiais, estimativas de custo e acervo técnico
+            que promovem uma grande segurança e refinamento na prestação de serviços.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRID -->
+  <section class="portfolio-section">
+    <div class="portfolio-container">
+      <div class="portfolio-span">
+        <span class="back-title-portfolio">portfólio</span>
+        <span class="front-title-portfolio"><span class="front-sobre-portfolio">último </span> projetos</span>
+      </div>
+      <ul class="portfolio-grid">
+        <!-- Card 1 -->
+        <li class="project-card reveal" style="background-image:url('./img/grid/01.jpeg')">
+          <div class="project-overlay"></div>
+          <div class="project-title">Projeto de otimização do terminal</div>
+          <div class="project-tag">Estruturas de Madeira, Trabalho em Altura</div>
+        </li>
+
+        <!-- Card 2 -->
+        <li class="project-card reveal" style="background-image:url('./img/grid/02.jpeg')">
+          <div class="project-overlay"></div>
+          <div class="project-title">Recuperação dos Armazéns</div>
+          <div class="project-tag">Estruturas de Madeira, Soluções Corretivas</div>
+        </li>
+
+        <!-- Card 3 -->
+        <li class="project-card reveal" style="background-image:url('./img/grid/03.jpeg')">
+          <div class="project-overlay"></div>
+          <div class="project-title">Reconstrução do Armazém de Fertilizantes</div>
+          <div class="project-tag">Estruturas de Madeira</div>
+        </li>
+
+        <!-- Card 4 -->
+        <li class="project-card reveal" style="background-image:url('./img/grid/04.jpeg')">
+          <div class="project-overlay"></div>
+          <div class="project-title">Reforma Torre de Resfriamento</div>
+          <div class="project-tag">Estruturas Metálicas, Soluções Corretivas</div>
+        </li>
+
+        <!-- Card 5 -->
+        <li class="project-card reveal" style="background-image:url('./img/grid/05.jpeg')">
+          <div class="project-overlay"></div>
+          <div class="project-title">Recuperação Map Dap</div>
+          <div class="project-tag">Soluções Corretivas, Trabalho em Altura</div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CASCADA -->
+  <section id="service" class="service-section">
+    <div class="service-container">
+      <div class="service-span">
+        <span class="back-title-service">SERVIÇOS</span>
+        <span class="front-title-service"><span class="front-sobre-service">ÁREA DE</span> ATUAÇÃO</span>
+      </div>
+
+      <!-- Primeiro bloco de serviço -->
+      <!-- <div class="service-block reveal">
+        <div class="service-image">
+          <img src="./img/body/01.jpg"
+            alt="Execução de trabalho em altura">
+        </div>
+        <div class="service-content">
+          <h3>EXECUÇÃO DE TRABALHO EM ALTURA</h3>
+          <p>
+            Realizamos montagens e desmontagens estruturais, serviços de reforço,
+            manutenção e recuperação de estruturas metálicas e de madeira, com
+            profissionais qualificados e equipamentos adequados para máxima segurança.
+          </p>
+        </div>
+      </div> -->
+
+      <!-- Segundo bloco de serviço (invertido) -->
+      <!-- <div class="service-block reverse reveal">
+        <div class="service-image">
+          <img src="https://placehold.co/500x400/333333/FFFFFF?text=INSPEÇÕES+TÉCNICAS" alt="Inspeções técnicas">
+        </div>
+        <div class="service-content">
+          <h3>INSPEÇÕES TÉCNICAS PARA SOLUÇÕES CORRETIVAS</h3>
+          <p>
+            Com 21 anos de atuação no mercado de recuperação estrutural de obras de madeira,
+            a Almeida Junior consolidou uma experiente equipe técnica com vasta experiência
+            em inspeções técnicas e laudos periciais de caracterização estrutural com
+            elaboração de soluções corretivas e adequações estruturais.
+          </p>
+        </div>
+      </div> -->
+    </div>
+  </section>
+  <section class="banner">
+  <div class="overlay">
+    <h2>INSPEÇÕES<br>TÉCNICAS PARA<br>SOLUÇÕES<br>CORRETIVAS</h2>
+  </div>
+</section>
+
+
+
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Almeida Júnior - Todos os direitos reservados</p>
+    </div>
+  </footer>
+  <script src="js/home.js"></script>
+  <script src="js/about.js"></script>
+  <script src="js/ultimo_projeto.js"></script>
+  <!-- <script src="js/servico.js"></script> -->
+
+</body>
+
+</html>
