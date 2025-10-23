@@ -278,3 +278,53 @@
     font-size: 16px;
   }
 }
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .service-item,
+  .reverse {
+    flex-direction: column;
+  }
+
+  .back-title-portfolio {
+    font-size: 4rem;
+    top: -10px;
+  }
+
+  .front-title-portfolio {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .back-title-portfolio {
+    font-size: 2.5rem;
+    top: 0;
+  }
+
+  .front-title-portfolio {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+
+  .card-title,
+  .card-title2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .titulo-clientes {
+    font-size: 2rem;
+  }
+
+  .grupo-cliente {
+    min-width: 250px;
+    margin: 0 20px;
+  }
+
+  .cliente-principal {
+    font-size: 1.5rem;
+  }
+}

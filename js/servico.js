@@ -17,3 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", checkReveal);
   checkReveal(); // Verificar na carga inicial
 });
+
+const obs = new IntersectionObserver((ents)=>{
+    ents.forEach(e => e.isIntersecting && e.target.classList.add('is-in'));
+  }, {threshold:.15});
+
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));

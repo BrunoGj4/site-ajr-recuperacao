@@ -6,7 +6,12 @@
   --color-terc: #ff9c03;
 
   --container-max: 1100px;
-  --gap: 40px;
+
+  --maxw: 1200px;
+  --gap: 48px;
+  --shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  --brand: #4d49d3; /* roxo do título */
+  --text: #2b2b2b;
 }
 
 * {
@@ -17,7 +22,7 @@
 }
 
 body {
-  background-color: #afafaf;
+  background-color: #f5f5f5;
   color: white;
   overflow-x: hidden;
 }
