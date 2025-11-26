@@ -88,7 +88,10 @@
 /* card com background + overlay + hover */
 .project-card {
   position: relative;
-  background: var(--bg) center / cover no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #f5f5f5;
 
   object-fit: cover;
   object-position: 50% 50%;
@@ -153,7 +156,5 @@
 .project-card:hover .project-overlay {
   opacity: 0.85;
 }
-.project-card > .reveal > .recup{
-  background-color: red;
-}
+
 

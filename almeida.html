@@ -1,114 +1,333 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style/index.css">
+  <title>A Almeida Júnior - Nossa História</title>
+  <link rel="stylesheet" href="./style/index.css">
+  <link rel="stylesheet" href="./style/almeida/almeida.css">
   <link rel="shortcut icon" href="img/ajr.svg" type="image/x-icon">
-  <title>Almeida Júnior</title>
 </head>
-
 <body>
-  <section class="slideshow-container">
-    <!-- Slides -->
-    <div class="slide active"></div>
-    <div class="slide"></div>
-    <div class="slide"></div>
-    <div class="slide"></div>
 
-    <!-- Overlay escuro para melhor legibilidade do texto -->
-    <div class="overlay"></div>
+<!-- Header -->
+<header>
+  <div class="container">
+    <div class="logo">
+      <img src="./img/ajr.png" alt="AJr Logo">
+    </div>
 
-    <!-- Conteúdo -->
-    <div class="content">
-      <div class="header">
-        <div class="logo"><img src="img/ajr.png" alt=""></div>
-        <div class="nav-menu">
-          <a href="./home.html">HOME</a>
-          <a href="#">A ALMEIDA JR</a>
-          <a href="#">PORTFÓLIO</a>
-          <a href="#">SERVIÇOS</a>
-          <a href="#">CONTATO</a>
+    <nav>
+      <ul>
+        <li><a href="./home.html">HOME</a></li>
+        <li><a href="./almeida.html" class="active">A ALMEIDA JR</a></li>
+        <li><a href="./portfolio.html">PORTFÓLIO</a></li>
+        <li><a href="#">SERVIÇOS</a></li>
+        <li><a href="#">CONTATO</a></li>
+      </ul>
+    </nav>    
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="bg-image"></div>
+  <div class="overlay"></div>
+  <div class="hero-text">
+    <h1>A ALMEIDA JÚNIOR</h1>
+  </div>
+</section>
+
+<!-- Main Content -->
+<div class="almeida-content">
+
+  <!-- Nossa História Section -->
+  <section class="historia-section">
+    <div class="historia-container">
+      <div class="historia-title">
+        <h2><span class="fundada">FUNDADA EM</span> <span class="ano">1997</span></h2>
+      </div>
+      
+      <div class="historia-grid">
+        <div class="historia-text">
+          <p>
+            Fundada em 1997 e sediada na cidade de Santos, a empresa Almeida Júnior atua no setor de construção civil na prestação de serviços, especializada na manutenção de telhados e estruturas de madeira, estruturas metálicas e na altura e na realização de inspeções técnicas para soluções corretivas e adequações estruturais.
+          </p>
         </div>
-      </div>
-
-      <div class="promo-section">
-        <div class="main-text" id="slideDescription">ATUAMOS NOS MAIS DIVERSIFICADOS RAMOS DE INDUSTRIA</div>
-      </div>
-
-      <div class="navigation">
-        <button class="nav-button" id="prevBtn">&lt; anterior</button>
-        <div class="slide-counter" id="slideCounter">04 | 04</div>
-        <button class="nav-button" id="nextBtn">próximo &gt;</button>
+        <div class="historia-text">
+          <p>
+            Com a competência de seus empregados, suprem os mais diversificados segmentos das indústrias (fertilizantes, petroquímicas, químicas, alimentícias, etc.) e a galpões de médio e grande porte adquirindo uma vasta experiência na capacitação, organização, planejamento e controle na fabricação, manutenção e montagem de estruturas e telhados.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
-   <section class="historia-section">
-        <!-- Elementos decorativos -->
-        <div class="decorativo-1"></div>
-        <div class="decorativo-2"></div>
-
-        <div class="historia-container">
-            <div class="historia-content">
-                <div class="ano-destaque">1997</div>
-                <h1 class="historia-titulo">FUNDADA EM 1997</h1>
-                
-                <p class="historia-texto">
-                    Fundada em 1997 e sediada na cidade de <strong>Santos</strong>, a
-                    empresa <strong>Almeida Junior</strong> atua no setor da construção
-                    civil na prestação de serviços, especializada na
-                    manutenção de telhados e estruturas de madeira,
-                    trabalho em altura e na realização de inspeções
-                    técnicas para soluções corretivas e adequações
-                    estruturais.
-                </p>
-                
-                <p class="historia-texto">
-                    Com a competência de seus empregados, suprem os
-                    mais diversificados segmentos das indústrias
-                    (fertilizantes, petroquímicas, químicas, alimentícias,
-                    etc.) e galpões de médio e grande porte adquirindo
-                    com isso, o conhecimento de diversas técnicas de
-                    organização, planejamento e controle na fabricação,
-                    manutenção e montagem de estruturas e telhados.
-                </p>
-
-                <div class="detalhes-empresa">
-                    <div class="detalhe-item">
-                        <div class="detalhe-numero">25+</div>
-                        <div class="detalhe-texto">Anos de Experiência</div>
-                    </div>
-                    <div class="detalhe-item">
-                        <div class="detalhe-numero">500+</div>
-                        <div class="detalhe-texto">Projetos Concluídos</div>
-                    </div>
-                    <div class="detalhe-item">
-                        <div class="detalhe-numero">100%</div>
-                        <div class="detalhe-texto">Satisfação do Cliente</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="historia-imagem">
-                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Almeida Junior - Trabalhos em Altura">
-            </div>
+  <!-- Por Que a Almeida JR Section -->
+  <section class="porque-section">
+    <div class="porque-container">
+      <div class="porque-title">
+        <h2>POR QUE A ALMEIDA JR?</h2>
+      </div>
+      
+      <div class="porque-grid">
+        <!-- Card 1 -->
+        <div class="porque-card">
+          <div class="porque-icon">
+            <img src="./img/icon/people.png" alt="Pessoa">
+          </div>
+          <h3>Estímulo ao ambiente de trabalho</h3>
+          <p>A estrutura da empresa está voltada para o atendimento ao cliente, promovendo a criatividade e aprimorando a ação.</p>
         </div>
+
+        <!-- Card 2 -->
+        <div class="porque-card">
+          <div class="porque-icon">
+            <img src="./img/icon/relogio.png" alt="Relógio">
+          </div>
+          <h3>Atendimento aos prazos com eficiência e segurança</h3>
+          <p>Os prazos de entrega e regulações são cumpridas com eficiência e alta performance logística ativa.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="porque-card">
+          <div class="porque-icon">
+            <img src="./img/icon/desenho.png" alt="desenho">
+          </div>
+          <h3>Especializada em soluções corretivas</h3>
+          <p>Capacitação técnica para execução de serviços de modo "sem toda sua estrutura" formando soluções.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="porque-card">
+          <div class="porque-icon">
+            <img src="./img/icon/trabalhador.png" alt="trabalhador">
+          </div>
+          <h3>Seleção eficiente de mão de obra</h3>
+          <p>Equipe com ampla experiência técnica e treinamento constante com execução dos serviços prestados.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="porque-card">
+          <div class="porque-icon">
+            <img src="./img/icon/lampada.png" alt="lampada">
+          </div>
+          <h3>Soluções estratégicas e de inovação</h3>
+          <p>Extensivas as necessidades de cada cliente para atingir os resultados previstos além de investir constantemente em soluções e inovações.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Almeida Júnior - Todos os direitos reservados</p>
+  <!-- Quote Section -->
+  <section class="quote-section">
+    <div class="quote-container">
+      <div class="quote-marks">
+        <img src="./img/icon/frase1.png" alt="quote">
+      </div>
+      <p class="quote-text">
+        Não existe trabalho tão urgente, nem serviço tão importante, que não possa ser feito com segurança.
+      </p>
+      <div class="quote-marks">
+        <img src="./img/icon/frase2.png" alt="quote">
+      </div>
     </div>
-  </footer>
-  <script src="js/home.js"></script>
-  <script src="js/about.js"></script>
-  <script src="js/ultimo_projeto.js"></script>
-  <script src="js/servico.js"></script>
-  <script src="js/cliente.js"></script>
+  </section>
+
+  <!-- Missão Section -->
+  <section class="missao-visao-section">
+    <div class="mv-container">
+      <!-- Missão -->
+      <div class="mv-item">
+        <div class="mv-image">
+          <img src="./img/portfolio/01.jpg" alt="Missão - Almeida Júnior">
+        </div>
+        <div class="mv-content">
+          <h2>MISSÃO</h2>
+          <ul>
+            <li>Buscar soluções que priorizem a otimização de recursos;</li>
+            <li>Segurança na execução dos trabalhos, a qualidade de execução;</li>
+            <li>A satisfação e confiança dos nossos clientes, respeitando os princípios éticos.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Visão -->
+      <div class="mv-item reverse">
+        <div class="mv-image">
+          <img src="./img/portfolio/02.jpg" alt="Visão - Almeida Júnior">
+        </div>
+        <div class="mv-content">
+          <h2>VISÃO</h2>
+          <p>
+            Ser referência de excelência na prestação de serviços técnicos em manutenção e execução de telhados e estruturas de madeira, sendo admirada pela sua eficiência na resolução de problemas dos nossos clientes e ampliar nossa participação no mercado.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Valores Section -->
+  <section class="valores-section">
+    <div class="valores-container">
+      <div class="valores-header">
+        <div class="valores-image">
+          <img src="./img/portfolio/04.jpg" alt="Valores - Almeida Júnior">
+        </div>
+        <div class="valores-content">
+          <h2>VALORES</h2>
+          <ul class="valores-list">
+            <li>
+              <strong>- Parceria:</strong>
+              <p>Buscar uma relação positiva com nossos clientes e fornecedores;</p>
+            </li>
+            <li>
+              <strong>- Comprometimento:</strong>
+              <p>Assumir o comprometimento com a responsabilidade técnica dos serviços prestados;</p>
+            </li>
+            <li>
+              <strong>- Ética:</strong>
+              <p>Atuar de forma transparente e responsável a fim de garantir a ética profissional;</p>
+            </li>
+            <li>
+              <strong>- Garantia:</strong>
+              <p>Garantir a qualidade, pontualidade e assistência dos serviços prestados;</p>
+            </li>
+            <li>
+              <strong>- Segurança:</strong>
+              <p>Não existe trabalho tão urgente, nem serviço tão importante que não possa ser feito com segurança.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="valores-divider"></div>
+    </div>
+  </section>
+
+  <!-- Estrutura Organizacional Section -->
+  <section class="estrutura-section">
+    <div class="estrutura-container">
+      <div class="estrutura-title">
+        <h2>ESTRUTURA ORGANIZACIONAL</h2>
+      </div>
+      
+      <div class="estrutura-list">
+        <!-- Item 1 -->
+        <div class="estrutura-item">
+          <div class="estrutura-icon">
+            <img src="./img/icon/alvo.png" alt="Administradores">
+          </div>
+          <div class="estrutura-info">
+            <h3>ADMINISTRADORES</h3>
+          </div>
+          <div class="estrutura-desc">
+            <p>Administradores com vasta experiência no mercado com capacitação específica para condução de obra civil.</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="estrutura-item">
+          <div class="estrutura-icon">
+            <img src="./img/icon/trabalhador.png" alt="Engenheiros">
+          </div>
+          <div class="estrutura-info">
+            <h3>ENGENHEIROS ESPECIALISTAS</h3>
+          </div>
+          <div class="estrutura-desc">
+            <p>Engenheiros especialistas em madeira e estruturas de madeira.</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="estrutura-item">
+          <div class="estrutura-icon">
+            <img src="./img/icon/escudo.png" alt="Técnicos">
+          </div>
+          <div class="estrutura-info">
+            <h3>TÉCNICOS DE SEGURANÇA</h3>
+          </div>
+          <div class="estrutura-desc">
+            <p>Equipe de Segurança com técnicos capacitados e com vasta experiência em condução segura dos trabalhos em solo e altura.</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="estrutura-item">
+          <div class="estrutura-icon">
+            <img src="./img/icon/furadeira.png" alt="Mão de Obra">
+          </div>
+          <div class="estrutura-info">
+            <h3>MÃO DE OBRA ESPECIALIZADA</h3>
+          </div>
+          <div class="estrutura-desc">
+            <p>Mão de Obra de execução com encarregados e carpinteiros treinados em trabalho em altura e grandes obras.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alcance no Brasil Section -->
+  <section class="alcance-section">
+    <div class="alcance-container">
+      <div class="alcance-title">
+        <h2>ALCANCE <span class="title-highlight">NO BRASIL</span></h2>
+        <p class="alcance-subtitle">Presença em diversos estados brasileiros</p>
+      </div>
+      
+      <div class="mapa-brasil">
+        <img src="./img/brasil.svg" alt="Mapa do Brasil - Alcance Almeida Júnior" id="mapaBrasil">
+      </div>
+      
+      <div class="estados-carousel">
+        <div class="estados-track">
+          <div class="estado-item">
+            <img src="./img/estado/Sao_Paulo.png" alt="São Paulo">
+            <h4>São Paulo</h4>
+          </div>
+          <div class="estado-item">
+            <img src="./img/estado/Minas_Gerais.png" alt="Minas Gerais">
+            <h4>Minas Gerais</h4>
+          </div>
+          <div class="estado-item">
+            <img src="./img/estado/Parana.png" alt="Paraná">
+            <h4>Paraná</h4>
+          </div>
+          <div class="estado-item">
+            <img src="./img/estado/Rio_Grande_do_Sul.png" alt="Rio Grande do Sul">
+            <h4>Rio Grande do Sul</h4>
+          </div>
+          <div class="estado-item">
+            <img src="./img/estado/Goias.png" alt="Goiás">
+            <h4>Goiás</h4>
+          </div>
+          <div class="estado-item">
+            <img src="./img/estado/Mato_Grosso.png" alt="Mato Grosso">
+            <h4>Mato Grosso</h4>
+          </div>
+          <div class="estado-item">
+            <img src="./img/estado/Maranhao.png" alt="Maranhão">
+            <h4>Maranhão</h4>
+          </div>
+          <div class="estado-item">
+            <img src="./img/estado/Bahia.png" alt="Bahia">
+            <h4>Bahia</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Almeida Júnior - Todos os direitos reservados</p>
+  </div>
+</footer>
+
+<script src="js/almeida.js"></script>
 
 </body>
-
 </html>

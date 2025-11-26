@@ -1,204 +1,96 @@
-.historia-section {
-  min-height: 100vh;
+
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
   display: flex;
   align-items: center;
-  position: relative;
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-  color: white;
-  overflow: hidden;
+  justify-content: space-between;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
 }
 
-.historia-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
-  width: 100%;
+.logo img {
+  height: 60px;
 }
 
-.historia-content {
-  z-index: 2;
-}
-
-.ano-destaque {
-  font-size: 5rem;
-  font-weight: 900;
-  color: #e74c3c;
-  margin-bottom: 20px;
-  line-height: 1;
-  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
-}
-
-.historia-titulo {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 30px;
-  line-height: 1.2;
-}
-
-.historia-texto {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  margin-bottom: 25px;
-  opacity: 0.95;
-}
-
-.historia-texto strong {
-  color: #e74c3c;
-  font-weight: 600;
-}
-
-.historia-imagem {
-  position: relative;
-  height: 600px;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
-  transform: rotate(-2deg);
-  transition: transform 0.5s ease;
-}
-
-.historia-imagem:hover {
-  transform: rotate(0deg) scale(1.02);
-}
-
-.historia-imagem img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.historia-imagem:hover img {
-  transform: scale(1.1);
-}
-
-.detalhes-empresa {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+nav ul {
+  list-style: none;
+  display: flex;
   gap: 30px;
-  margin-top: 50px;
-  padding-top: 40px;
-  border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.detalhe-item {
+nav ul li a {
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00b4ff;
+}
+
+.phone {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.detalhe-numero {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #e74c3c;
-  margin-bottom: 10px;
-}
-
-.detalhe-texto {
-  font-size: 1rem;
-  opacity: 0.9;
-}
-
-/* Elementos decorativos */
-.decorativo-1 {
+/* Fundo vídeo */
+.bg-video {
   position: absolute;
-  top: 10%;
-  right: 5%;
-  width: 200px;
-  height: 200px;
-  background: rgba(231, 76, 60, 0.1);
-  border-radius: 50%;
-  animation: flutuar 6s ease-in-out infinite;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
 }
 
-.decorativo-2 {
+/* Caso use imagem ao invés de vídeo */
+.bg-image {
+  background: url("../../img/slide/01.jpg") center/cover no-repeat;
   position: absolute;
-  bottom: 15%;
-  left: 3%;
-  width: 150px;
-  height: 150px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  animation: flutuar 8s ease-in-out infinite reverse;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
 }
 
-@keyframes flutuar {
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-20px) rotate(180deg);
-  }
+/* Overlay branco suave */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+  z-index: -1;
 }
 
-/* Responsividade */
-@media (max-width: 1024px) {
-  .historia-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 40px;
-  }
-
-  .historia-imagem {
-    height: 400px;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-
-  .ano-destaque {
-    font-size: 4rem;
-  }
-
-  .historia-titulo {
-    font-size: 2.8rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .historia-container {
-    padding: 0 20px;
-  }
-
-  .ano-destaque {
-    font-size: 3rem;
-  }
-
-  .historia-titulo {
-    font-size: 2.2rem;
-  }
-
-  .historia-texto {
-    font-size: 1.1rem;
-  }
-
-  .detalhes-empresa {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .historia-imagem {
-    height: 300px;
-  }
-
-  .decorativo-1,
-  .decorativo-2 {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .ano-destaque {
-    font-size: 2.5rem;
-  }
-
-  .historia-titulo {
-    font-size: 1.8rem;
-  }
-
-  .historia-texto {
-    font-size: 1rem;
-  }
+.hero-text h1 {
+  font-size: 42px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  color: #fff;
+  text-transform: uppercase;
 }
