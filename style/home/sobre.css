@@ -1,3 +1,5 @@
+@import url('./root-home.css');
+
 .about-section {
   width: 100%;
   min-height: 100vh; /* ocupa altura total da janela */
@@ -22,40 +24,40 @@
   transform: translateY(0);
 }
 
-.about-span{
-  position: relative;
-  width: 100%;
-  height: 200px; /* altura controlada para o bloco */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
+/* Background Text "SOBRE A ALMEIDA JÚNIOR" */
+.about-title::before {
+  content: "SOBRE A ALMEIDA JÚNIOR";
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:6rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  opacity: 0.2;
+  white-space: nowrap;
+  z-index: 0;
+  letter-spacing: 10px;
+}
 
-  & .back-title {
-    position: absolute;
-    top: 50%;
-    transform: translate(1%, -50%);
-    font-size: 100px;
-    color: var(--color-secodary);
-    opacity: 0.1; /* suave */
-    white-space: nowrap;
-    z-index: 1;
-    pointer-events: none; /* evita interferência no clique */
-    
-  }  
-  & .front-title {
-    color: var(--color-secodary);
-    font-size: 55px;
-    text-align: center;    
-  }  
-  & .front-sobre {
-    /* position: absolute; */
-    text-align: center;
-    color: var(--color-primary);
-    font-size: 55px;    
-  }
+
+.about-title h2 {
+  position: relative;
+  z-index: 1;
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.about-title h2 .about {
+  color: var(--color-primary);
+}
+
+.about-title h2 .almeida-jr {
+  color: var(--color-secodary);
+  font-weight: 700;
 }
 
 .about-grid {
@@ -86,12 +88,9 @@
 }
 /* texto (direita) */
 .about-text {
-  font-size: 26px;
+  font-size: 1.4rem;
   line-height: 1.9;
   color: #333;
   text-align: justify;
 }
 .about-text p + p{ margin-top: 16px; }
-
-
-

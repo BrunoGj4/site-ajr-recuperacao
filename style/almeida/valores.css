@@ -1,0 +1,187 @@
+@import url('./root-almeida.css');
+
+
+/* Missao Visao Section */
+.missao-visao-section {
+  padding: 100px 40px;
+  background: white;
+}
+
+.mv-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.mv-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.mv-item:last-child {
+  margin-bottom: 0;
+}
+
+.mv-item.reverse {
+  direction: rtl;
+}
+
+.mv-item.reverse > * {
+  direction: ltr;
+}
+
+.mv-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.mv-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mv-image:hover img {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+.mv-image:hover {
+  box-shadow: 0 20px 60px rgba(94, 86, 202, 0.25);
+}
+
+.mv-content {
+  background: white;
+  height: 100%;
+  padding: 50px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.mv-content h2 {
+  font-size: 3.5rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.mv-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mv-content ul li {
+  font-size: 1.05rem;
+  line-height: 2;
+  color: #444;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.mv-content ul li:before {
+  content: "−";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.mv-content p {
+  font-size: 1.05rem;
+  line-height: 2;
+  color: #444;
+  text-align: justify;
+}
+
+/* Valores Section */
+.valores-section {
+  padding: 100px 40px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.valores-container {
+  /* max-width: 1400px; */
+  margin: 0 auto;
+}
+
+.valores-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.valores-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.valores-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.valores-image:hover img {
+  transform: scale(1.08);
+}
+
+.valores-image:hover {
+  box-shadow: 0 20px 60px rgba(94, 86, 202, 0.25);
+}
+
+.valores-title {
+  font-size: 3.5rem;
+  color: var(--color-secodary);
+  font-weight: 700;
+  margin-bottom: 60px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* .valores-content removed empty rule */
+
+.valores-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.valores-list li {
+  margin-bottom: 25px;
+}
+
+.valores-list li strong {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.valores-list li p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.valores-divider {
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(
+    90deg, var(--color-primary) 50%, 
+    var(--color-secodary) 100%);
+}

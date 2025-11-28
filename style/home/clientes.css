@@ -1,3 +1,5 @@
+@import url('./root-home.css');
+
 .clientes-section {
   max-width: 1200px;
   width: 100%;
@@ -5,14 +7,31 @@
   margin: 0 auto;
 }
 
-.titulo-clientes {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 60px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+/* "ALGUNS DE NOSSOS CLIENTES" */
+
+.clientes-title {
+  margin-bottom: 4rem;
 }
+
+.clientes-title h2 {
+  position: relative;
+  z-index: 1;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.clientes-title h2 .clientes {
+  color: var(--color-primary);
+}
+
+.clientes-title h2 .almeida-jr {
+  color: var(--color-secodary);
+  font-weight: 700;
+}
+
+
 
 .carrossel-container {
   position: relative;
@@ -95,58 +114,3 @@
   animation-play-state: paused;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .titulo-clientes {
-    font-size: 2rem;
-  }
-
-  .carrossel-container {
-    height: 120px;
-  }
-
-  .grupo-cliente {
-    min-width: 150px;
-    height: 100px;
-    margin: 0 20px;
-  }
-
-  .cliente-principal {
-    max-width: 140px;
-    max-height: 80px;
-  }
-
-  .carrossel-container::before,
-  .carrossel-container::after {
-    width: 80px;
-  }
-
-  @keyframes rotacionar {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-150px * 8 - 20px * 8));
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  .grupo-cliente {
-    min-width: 120px;
-    margin: 0 15px;
-  }
-
-  .cliente-principal {
-    max-width: 110px;
-  }
-
-  @keyframes rotacionar {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-120px * 8 - 15px * 8));
-    }
-  }
-}

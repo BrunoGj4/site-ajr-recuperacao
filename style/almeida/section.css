@@ -1,0 +1,79 @@
+@import url('./root-almeida.css');
+
+
+/* QUOTE SECTION */
+.quote-section {
+  padding: 0;
+  background: var(--color-primary);
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container central do texto */
+.quote-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;   /* IMPORTANTE para posicionar as aspas */
+  z-index: 2;
+  padding: 40px;
+}
+
+/* ASPA DA ESQUERDA */
+.quote-marks-left {
+  position: absolute;
+  top: 25%;
+  left: -90px;       /* MOVA MAIS PARA A ESQUERDA AQUI */
+  width: 150px;
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* ASPA DA DIREITA */
+.quote-marks-right {
+  position: absolute;
+  bottom: 25%;
+  right: -90px;      /* MOVA MAIS PARA A DIREITA AQUI */
+  width: 150px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* ANIMAÇÃO QUANDO A SEÇÃO ENTRA EM TELA */
+.quote-section.animate .quote-marks-left,
+.quote-section.animate .quote-marks-right {
+  opacity: 0.6;
+  transform: translateY(0);
+}
+
+/* IMAGENS DAS ASPAS */
+.quote-marks-left img,
+.quote-marks-right img {
+  width: 100%;
+  height: auto;
+}
+
+/* TEXTO DA FRASE */
+.quote-text {
+  font-size: 2rem;
+  color: white;
+  font-weight: 300;
+  line-height: 1.6;
+  font-style: italic;
+  margin: 40px 0;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease 0.3s, transform 1s ease 0.3s;
+}
+
+/* ANIMAÇÃO DO TEXTO */
+.quote-section.animate .quote-text {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,106 @@
+@import url('./root-almeida.css');
+
+/* Por Que Section */
+.porque-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 5px 40px;
+  background: var();
+}
+
+.porque-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.porque-title {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.porque-title::before {
+  content: "POR QUE AJR";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:6rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  opacity: 0.2;
+  white-space: nowrap;
+  z-index: 0;
+  letter-spacing: 20px;
+}
+
+
+.porque-title h2 {
+  position: relative;
+  z-index: 1;
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.porque-title h2 .porque {
+  color: var(--color-primary);
+}
+
+.porque-title h2 .almeida-jr {
+  color: var(--color-secodary);
+  font-weight: 700;
+}
+
+.porque-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+}
+
+.porque-card {
+  text-align: center;  
+  height: 50vh;
+  padding: 30px 20px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 12px;
+  background: white;
+}
+
+.porque-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(94, 86, 202, 0.15);
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+}
+
+.porque-icon {
+  width: 80px;
+  height: 80px;
+  margin: 10vh auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.porque-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--color-secodary);
+}
+
+.porque-card h3 {
+  font-size: 1.2rem;
+  color: var(--color-secodary);
+  font-weight: 600;
+  margin: 15px 0 10px;
+  line-height: 1.4;
+  min-height: 50px;
+}
+
+.porque-card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}

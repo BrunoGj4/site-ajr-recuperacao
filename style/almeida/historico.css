@@ -1,96 +1,77 @@
+@import url('./root-almeida.css');
 
-
-body {
-  background: #000;
-  color: #fff;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 15px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 10;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(5px);
-}
-
-.logo img {
-  height: 60px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
-nav ul li a {
-  color: #ffffff;
-  font-size: 14px;
-  text-decoration: none;
-  letter-spacing: 2px;
-  transition: 0.3s;
-}
-
-nav ul li a:hover {
-  color: #00b4ff;
-}
-
-.phone {
-  color: #fff;
-  font-size: 14px;
-  letter-spacing: 1px;
-}
-
-.hero {
+/* Historia Section */
+.historia-section {
+  padding: 10px 40px;
+  background: white;
   position: relative;
-  height: 100vh;
+  overflow: hidden;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+}
+
+.historia-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.historia-title {
   text-align: center;
+  margin-bottom: 50px;
+  position: relative;
 }
 
-/* Fundo vídeo */
-.bg-video {
+/* Background Text "NOSSA HISTÓRIA" */
+.historia-title::before {
+  content: "NOSSA HISTÓRIA";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:6rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  opacity: 0.2;
+  white-space: nowrap;
+  z-index: 0;
+  letter-spacing: 10px;
 }
 
-/* Caso use imagem ao invés de vídeo */
-.bg-image {
-  background: url("../../img/slide/01.jpg") center/cover no-repeat;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
+
+.historia-title h2 {
+  position: relative;
+  z-index: 1;
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin: 0;
 }
 
-/* Overlay branco suave */
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(2px);
-  z-index: -1;
+.historia-title h2 .fundada {
+  color: var(--color-primary);
 }
 
-.hero-text h1 {
-  font-size: 42px;
-  font-weight: 300;
-  letter-spacing: 4px;
-  color: #fff;
-  text-transform: uppercase;
+.historia-title h2 .ano {
+  color: var(--color-secodary);
+  font-weight: 700;
+}
+
+.historia-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.historia-text p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 20px;
+  text-align: justify;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }

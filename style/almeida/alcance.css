@@ -1,0 +1,113 @@
+@import url('./root-almeida.css');
+
+/* Alcance Section */
+.alcance-section {
+  padding: 100px 40px;
+  background: var(--color-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.alcance-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.alcance-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.alcance-title h2 {
+  font-size: 3.5rem;
+  color: var(--color-gray);
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.alcance-title h2 .title-highlight {
+  color: white;
+  font-weight: 800;
+}
+
+.alcance-subtitle {
+  color: #ffa500;
+  font-size: 2.2rem;
+  margin-top: 10px;
+}
+
+.mapa-brasil {
+  max-width: 600px;
+  margin: 0 auto 60px;
+  position: relative;
+  text-align: center;
+  fill: var(--color-gray);
+}
+
+.mapa-brasil img {
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+
+.estados-carousel {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.estados-track {
+  display: flex;
+  gap: 40px;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 8 - 40px * 8));
+  }
+}
+
+.estados-track:hover {
+  animation-play-state: paused;
+}
+
+.estado-item {
+  flex: 0 0 250px;
+  text-align: center;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.estado-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.estado-item:hover {
+  background: rgba(255, 165, 0, 0.25);
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(255, 165, 0, 0.3);
+  border-color: rgba(255, 165, 0, 0.5);
+}
+
+.estado-item h4 {
+  color: white;
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 600;
+}

@@ -1,0 +1,64 @@
+@import url('./root-almeida.css');
+
+/* Scroll Reveal Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.porque-card,
+.estrutura-card,
+.mv-item,
+.estado-item {
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.porque-card:nth-child(1) { animation-delay: 0.1s; }
+.porque-card:nth-child(2) { animation-delay: 0.2s; }
+.porque-card:nth-child(3) { animation-delay: 0.3s; }
+.porque-card:nth-child(4) { animation-delay: 0.4s; }
+.porque-card:nth-child(5) { animation-delay: 0.5s; }
+
+.estrutura-card:nth-child(1) { animation-delay: 0.1s; }
+.estrutura-card:nth-child(2) { animation-delay: 0.2s; }
+.estrutura-card:nth-child(3) { animation-delay: 0.3s; }
+.estrutura-card:nth-child(4) { animation-delay: 0.4s; }
+
+.estado-item:nth-child(1) { animation-delay: 0.1s; }
+.estado-item:nth-child(2) { animation-delay: 0.2s; }
+.estado-item:nth-child(3) { animation-delay: 0.3s; }
+.estado-item:nth-child(4) { animation-delay: 0.4s; }
+.estado-item:nth-child(5) { animation-delay: 0.5s; }
+.estado-item:nth-child(6) { animation-delay: 0.6s; }
+.estado-item:nth-child(7) { animation-delay: 0.7s; }
+.estado-item:nth-child(8) { animation-delay: 0.8s; }
+
+
+.historia-text.animate p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.historia-text.animate p:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.historia-text.animate p:nth-child(2) {
+  transition-delay: 0.4s;
+}

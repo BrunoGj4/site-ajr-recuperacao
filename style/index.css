@@ -1,6 +1,9 @@
-@import url('home.css');
-@import url('sobre.css');
-@import url('ultimo_projeto.css');
-@import url('servico.css');
-@import url('responsive.css');
-@import url('clientes.css');
+/* home */
+@import url('../style/home/root-home.css');
+
+
+/* Almeida */
+@import url('/style/almeida/root-almeida.css');
+
+
+/* home */
