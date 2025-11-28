@@ -130,8 +130,7 @@
   background: white;
   border-radius: 12px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-  height: auto;
-  min-height: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
