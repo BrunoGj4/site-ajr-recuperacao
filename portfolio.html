@@ -4,39 +4,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style/portfolio.css">
+  <link rel="stylesheet" href="./style/index.css">
   <link rel="shortcut icon" href="img/ajr.svg" type="image/x-icon">
   <title>Portfólio - Almeida Júnior</title>
 </head>
 
 <body>
 
-<!-- Hero Section with Header -->
+<!-- Hero Section -->
 <section class="hero">
   <div class="bg-image"></div>
   <div class="overlay"></div>
-  
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <div class="logo">
-        <img src="./img/ajr.png" alt="AJr Logo">
+
+  <div class="content">
+    <div class="header">
+      <div class="logo"><img src="img/ajr.png" alt=""></div>
+      <div class="nav-menu">
+        <a href="./index.html">HOME</a>
+        <a href="./almeida.html">A ALMEIDA JR</a>
+        <a href="#" class="active">PORTFÓLIO</a>
+        <a href="./servico.html">SERVIÇOS</a>
+        <a href="./contato.html">CONTATO</a>
       </div>
-
-      <nav>
-        <ul>
-          <li><a href="./index.html">HOME</a></li>
-          <li><a href="./almeida.html">A ALMEIDA JR</a></li>
-          <li><a href="./portfolio.html" class="active">PORTFÓLIO</a></li>
-          <li><a href="#">SERVIÇOS</a></li>
-          <li><a href="#">CONTATO</a></li>
-        </ul>
-      </nav>    
     </div>
-  </header>
 
-  <div class="hero-text">
-    <h1>PORTFÓLIO</h1>
+    <div class="hero-text">
+      <h1>PORTFÓLIO</h1>
+    </div>
+
+    <div></div>
   </div>
 </section>
 
@@ -46,36 +42,45 @@
   <!-- Portfolio Grid Section -->
   <section class="portfolio-section">
     <div class="portfolio-container">
-      <div class="portfolio-span">
-        <span class="back-title-portfolio">portfólio</span>
-        <span class="front-title-portfolio"><span class="front-sobre-portfolio">nossos </span> projetos</span>
+      <div class="portfolio-title">
+        <h2><span class="portfolio">portfólio</span></h2>
       </div>
 
       <ul class="portfolio-grid">
         <li class="project-card reveal" style="background-image:url('./img/grid/01.jpeg')">
           <div class="project-overlay"></div>
-          <div class="project-title">Projeto de otimização do terminal</div>
-          <div class="project-tag">Estruturas de Madeira, Trabalho em Altura</div>
+          <div class="card-info">
+            <div class="project-title">Projeto de otimização do terminal</div>
+            <div class="project-tag">Estruturas de Madeira, Trabalho em Altura</div>
+          </div>
         </li>
         <li class="project-card reveal" style="background-image:url('./img/grid/02.jpeg')">
           <div class="project-overlay"></div>
-          <div class="project-title">Recuperação dos Armazéns</div>
-          <div class="project-tag">Estruturas de Madeira, Soluções Corretivas</div>
+          <div class="card-info">
+            <div class="project-title">Recuperação dos Armazéns</div>
+            <div class="project-tag">Estruturas de Madeira, Soluções Corretivas</div>
+          </div>
         </li>
         <li class="project-card reveal" style="background-image:url('./img/grid/03.jpeg')">
           <div class="project-overlay"></div>
-          <div class="project-title">Reconstrução do Armazém de Fertilizantes</div>
-          <div class="project-tag">Estruturas de Madeira</div>
+          <div class="card-info">
+            <div class="project-title">Reconstrução do Armazém de Fertilizantes</div>
+            <div class="project-tag">Estruturas de Madeira</div>
+          </div>
         </li>
         <li class="project-card reveal" style="background-image:url('./img/grid/04.jpeg')">
           <div class="project-overlay"></div>
-          <div class="project-title">Reforma Torre de Resfriamento</div>
-          <div class="project-tag">Estruturas Metálicas, Soluções Corretivas</div>
+          <div class="card-info">
+            <div class="project-title">Reforma Torre de Resfriamento</div>
+            <div class="project-tag">Estruturas Metálicas, Soluções Corretivas</div>
+          </div>
         </li>
         <li class="project-card reveal recup" style="background-image:url('./img/grid/05.jpeg')">
           <div class="project-overlay"></div>
-          <div class="project-title">Recuperação Map Dap</div>
-          <div class="project-tag">Soluções Corretivas, Trabalho em Altura</div>
+          <div class="card-info">
+            <div class="project-title">Recuperação Map Dap</div>
+            <div class="project-tag">Soluções Corretivas, Trabalho em Altura</div>
+          </div>
         </li>
       </ul>
     </div>

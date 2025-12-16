@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Almeida Júnior</title>
+  <link rel="stylesheet" href="./style/contato/root-contato.css">
+  <link rel="shortcut icon" href="img/ajr.svg" type="image/x-icon">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="bg-image" style="background-image: url('./img/grid/04.jpeg');"></div> <!-- Using an existing image as placeholder -->
+    <div class="overlay"></div>
+
+    <div class="content">
+      <div class="header">
+        <div class="logo"><img src="img/ajr.png" alt="Almeida Júnior"></div>
+        <div class="nav-menu">
+          <a href="./index.html">HOME</a>
+          <a href="./almeida.html">A ALMEIDA JR</a>
+          <a href="./portfolio.html">PORTFÓLIO</a>
+          <a href="./servico.html">SERVIÇOS</a>
+          <a href="#" class="active">CONTATO</a>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <h1>CONTATO</h1>
+      </div>
+      <div></div>
+    </div>
+  </section>
+
+  <div class="valores-divider"></div>
+
+  <!-- Contact Form Section -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <form class="contact-form" action="https://formspree.io/f/mnneywya" method="POST">
+        <!-- campos mantidos -->
+
+        <div class="form-group">
+          <input type="text" name="nome" placeholder="Nome" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="E-mail" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" name="telefone" placeholder="Telefone*">
+        </div>
+        <div class="form-group">
+          <input type="tel" name="celular" placeholder="Celular*">
+        </div>
+        <div class="form-group">
+          <select name="como_conheceu">
+            <option value="" disabled selected>Como nos conheceu?*</option>
+            <option value="indicacao">Indicação</option>
+            <option value="google">Google</option>
+            <option value="redes_sociais">Redes Sociais</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select name="forma_contato">
+            <option value="" disabled selected>Como prefere ser contatado?*</option>
+            <option value="email">E-mail</option>
+            <option value="telefone">Telefone</option>
+            <option value="whatsapp">WhatsApp</option>
+          </select>
+        </div>
+        <div class="form-group full-width">
+          <input type="text" name="assunto" placeholder="Assunto">
+        </div>
+        <div class="form-group full-width">
+          <textarea name="mensagem" placeholder="Mensagem*" required></textarea>
+        </div>
+        <div class="form-group full-width">
+          <button type="submit" class="submit-btn">ENVIAR</button>
+        </div>
+        <div class="form-group full-width">
+          <div id="form-status" class="form-status"></div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <section class="info-section">
+    <!-- Background Text -->
+    <div class="info-bg-text">FALE CONOSCO</div> <!-- Might need separate bg texts for different columns if spacing requires -->
+
+    <div class="info-container">
+      <!-- Column 1: Fale Conosco -->
+      <div class="info-col">
+        <h2>ENTRE <span style="font-weight:700;">EM CONTATO</span></h2>
+        <div class="contact-details">
+          <ul>
+            <li>
+              <img src="./img/icon/telefone.png" alt="Telefone"> <!-- Placeholder icon path -->
+              <p>(13) 3361.9134</p>
+            </li>
+            <li>
+              <img src="./img/icon/localizacao.png" alt="Endereço">
+              <p> R. Amador Bueno, 333<br>Sala 1204 - Santos - SP</p>
+            </li>
+            <li>
+              <img src="./img/icon/email.png" alt="Email">
+              <p>contato@almeidajr.com.br</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Column 2: Mídias -->
+      <div class="info-col social-media">
+        <h2>ESTAMOS <span style="font-weight:700;">NAS MÍDIAS</span></h2>
+        <!-- <div class="info-bg-text" style="top: 150%;">SOCIAIS</div> -->
+        <div class="social-icons">
+          <a href="#"><img src="./img/icon/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="./img/icon/instagram.png" alt="Instagram"></a> <!-- Placeholder paths -->
+          <a href="#"><img src="./img/icon/linkedin.png" alt="LinkedIn"></a>
+          <a href="#"><img src="./img/icon/youtube.png" alt="Youtube"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Almeida Júnior - Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="js/contato.js"></script>
+</body>
+</html>

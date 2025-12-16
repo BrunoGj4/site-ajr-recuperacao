@@ -83,7 +83,7 @@
 }
 
 /* Smartphones Pequenos */
-@media (max-width: 480px) {
+@media (max-width: 573) {
   .slideshow-container {
     min-height: 650px;
   }
@@ -178,40 +178,74 @@
   .project-card {
     aspect-ratio: 4/5;
   }
+
+  .portfolio-title::before {
+    font-size: 6rem;
+  }
+
+  .portfolio-title h2 {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 768px) {
   .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 
-  .back-title-portfolio {
-    font-size: 70px;
+  .portfolio-title::before {
+    font-size: 4rem;
+    letter-spacing: 5px;
   }
 
-  .front-title-portfolio,
-  .front-sobre-portfolio {
-    font-size: 40px;
+  .portfolio-title h2 {
+    font-size: 2rem;
   }
 
   .portfolio-section {
     height: auto;
     min-height: 100vh;
   }
+
+  /* Portfolio Card Text - Mobile Reset */
+  .project-title {
+    font-size: 16px;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+  }
+
+  .project-tag {
+    transform: none;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    width: auto;
+    white-space: normal;
+  }
+
+  .project-card {
+    height: 400px;
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 573) {
   .portfolio-grid {
     grid-template-columns: 1fr;
   }
 
-  .back-title-portfolio {
-    font-size: 50px;
+  .portfolio-grid {
+    grid-template-columns: 1fr;
   }
 
-  .front-title-portfolio,
-  .front-sobre-portfolio {
-    font-size: 30px;
+  .portfolio-title::before {
+    font-size: 3rem;
+  }
+
+  .portfolio-title h2 {
+    font-size: 1.8rem;
   }
 
   .portfolio-span {
@@ -286,25 +320,25 @@
     flex-direction: column;
   }
 
-  .back-title-portfolio {
+  .portfolio-title::before {
     font-size: 4rem;
-    top: -10px;
+    top: 50%; /* Reset/Ensure centered */
   }
 
-  .front-title-portfolio {
+  .portfolio-title h2 {
     font-size: 2rem;
   }
 }
 
 @media (max-width: 576px) {
-  .back-title-portfolio {
+  .portfolio-title::before {
     font-size: 2.5rem;
-    top: 0;
+    top: 50%;
   }
 
-  .front-title-portfolio {
+  .portfolio-title h2 {
     font-size: 1.5rem;
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   .card-title,
@@ -313,7 +347,7 @@
   }
 }
 
-/* Responsividade */
+/* Responsividade clientes*/
 @media (max-width: 768px) {
   .titulo-clientes {
     font-size: 2rem;
@@ -328,7 +362,6 @@
     font-size: 1.5rem;
   }
 }
-
 
 /* Responsividade clientes*/
 @media (max-width: 768px) {
@@ -366,7 +399,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 573) {
   .grupo-cliente {
     min-width: 120px;
     margin: 0 15px;
@@ -406,22 +439,22 @@
     padding: 30px;
   }
 
-  .back-title-portfolio {
+  .portfolio-title::before {
     font-size: 5rem;
   }
 
-  .front-title-portfolio {
+  .portfolio-title h2 {
     font-size: 2.5rem;
   }
 }
 
 @media (max-width: 576px) {
-  .back-title-portfolio {
+  .portfolio-title::before {
     font-size: 3rem;
-    top: -20px;
+    top: 50%;
   }
 
-  .front-title-portfolio {
+  .portfolio-title h2 {
     font-size: 1.8rem;
   }
 
@@ -429,9 +462,39 @@
   .card-title2 {
     font-size: 1.5rem;
   }
-  
-  .card-text p, 
+
+  .card-text p,
   .card-text ul li {
     font-size: 1rem;
+  }
+}
+
+/* Responsividade serviço */
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 576px) {
+  .about-title h2 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  .about-title::before {
+    content: "AJR";
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:4rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    opacity: 0.2;
+    white-space: nowrap;
+    z-index: 0;
+    letter-spacing: 3rem;
+  }
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.9;
   }
 }
